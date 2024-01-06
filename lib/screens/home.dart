@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:http_requests/screens/album_screen.dart';
 import 'package:http_requests/screens/post_screen.dart';
+import 'package:http_requests/screens/todos_screen.dart';
 import 'package:http_requests/widget/custom_tile.dart';
 
 class Home extends StatelessWidget {
@@ -31,6 +32,10 @@ class Home extends StatelessWidget {
           CustomTile(
             title: "Album",
             screen: const AlbumScreen(),
+          ),
+          CustomTile(
+            title: "Todos",
+            screen: const TodosScreen(),
           ),
         ],
       ),
